@@ -1,0 +1,9 @@
+version: '3'
+services:
+  my_app:
+    image: testjs:latest
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      - MESSAGE=${MESSAGE}
+      - PORT=${PORT}
